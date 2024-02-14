@@ -1,5 +1,7 @@
 <h1>Listagem dos Suportes</h1>
 
+{{ $xss }}
+
 <table>
     <thead>
         <th>Assunto</th>
