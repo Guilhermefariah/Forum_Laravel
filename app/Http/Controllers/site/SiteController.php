@@ -5,6 +5,6 @@
     {
         public function contact()
         {
-            return view();
+            return view('site/contact');
         }
     }
