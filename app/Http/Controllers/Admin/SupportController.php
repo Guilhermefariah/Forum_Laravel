@@ -11,9 +11,7 @@ class SupportController extends Controller
     public function index(Support $support)
     {
         $supports = $support->all();
-
-        $xss = '<script>alert("sou um hacker");</script>';
-        return view('admin/supports/index', compact('supports', 'xss'));
+        return view('admin/supports/index', compact('supports'));
     }
 
     public function create()
