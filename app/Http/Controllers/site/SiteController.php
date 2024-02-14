@@ -3,5 +3,8 @@
 
     class SiteController
     {
-        
+        public function contact()
+        {
+            return view();
+        }
     }
