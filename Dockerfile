@@ -1,6 +1,6 @@
 FROM php:8.1-fpm
 
-# set your user name, ex: user=carlos
+# set your user name, ex: user=guilherme
 ARG user=yourusername
 ARG uid=1000
 
