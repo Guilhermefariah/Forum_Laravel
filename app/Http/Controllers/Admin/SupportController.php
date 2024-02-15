@@ -35,4 +35,5 @@ class SupportController extends Controller
         
         return redirect()->route('supports.index');
     }
+    
 }
