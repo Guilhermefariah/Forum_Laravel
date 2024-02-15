@@ -15,7 +15,8 @@ class SupportController extends Controller
     }
     public function show(string|int $id)
     {
-        dd($id);
+        $support = Support::find($id);
+        dd($support);
     }
 
     public function create()
