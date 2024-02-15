@@ -23,7 +23,8 @@ class SupportController extends Controller
         $data = $request->all();
         $data['status']= 'a';
 
-        $support = $support->create($data);
-        dd($support);
+        $support->create($data);
+        
+        return redirect()->route('supports.index');
     }
 }
