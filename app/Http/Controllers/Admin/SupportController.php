@@ -18,7 +18,8 @@ class SupportController extends Controller
         if (!$support = Support::find($id)) {
             return back();
         };
-        dd($support->subject);
+        
+        return view('admin/supports/show', compact('support'));
     }   
 
     public function create()
