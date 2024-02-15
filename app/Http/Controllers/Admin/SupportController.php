@@ -40,5 +40,7 @@ class SupportController extends Controller
         if (!$support = $support->where('id', $id)->first()){
             return back();
         }
+        
+        return view('admin/supports/edit', compact('supports'));
     }
 }
