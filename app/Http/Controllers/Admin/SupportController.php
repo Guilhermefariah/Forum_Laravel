@@ -35,5 +35,10 @@ class SupportController extends Controller
         
         return redirect()->route('supports.index');
     }
-    
+    public function edit(Support $support, string|int $id)
+    {
+        if (!$support = $support->where('id', $id)->first()){
+            return back();
+        }
+    }
 }
