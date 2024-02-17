@@ -1,7 +1,8 @@
 <?php 
     namespace App\Services;
 
-    use stdClass;
+use Illuminate\Cache\Repository;
+use stdClass;
 
     class SupportService
     {
@@ -36,8 +37,19 @@
         }
 
         public function update(
-            
-        )
+            string $id,
+            string $subject,
+            string $status,
+            string $body
+        ): stdClass
+        {
+            return $this->repository->update(
+                $id,
+                $subject,
+                $status,
+                $body
+            );
+        }
         
         public function delete(string $id): void
         {
