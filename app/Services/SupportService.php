@@ -2,6 +2,7 @@
     namespace App\Services;
 
 use Illuminate\Cache\Repository;
+use SebastianBergmann\Type\NullType;
 use stdClass;
 
     class SupportService
@@ -41,7 +42,7 @@ use stdClass;
             string $subject,
             string $status,
             string $body
-        ): stdClass
+        ): stdClass | null
         {
             return $this->repository->update(
                 $id,
