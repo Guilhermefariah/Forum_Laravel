@@ -3,10 +3,13 @@
 
     class SupportService
     {
-        public function getAll(string $filter = null): array
+        public function __construct()
         {
             
         }
 
-        
+        public function getAll(string $filter = null): array
+        {
+            
+        }
     }
