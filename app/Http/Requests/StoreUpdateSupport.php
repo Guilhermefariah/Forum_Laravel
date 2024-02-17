@@ -31,7 +31,9 @@ class StoreUpdateSupport extends FormRequest
         ];
 
         if ($this->method() ===  'PUT'){
-            
+            $rules['subject'] = [
+                
+            ]
         }
         return $rules;
     }
