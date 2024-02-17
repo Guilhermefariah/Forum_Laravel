@@ -3,6 +3,8 @@
 
     class SupportService
     {
+        protected $repository;
+
         public function __construct()
         {
             
