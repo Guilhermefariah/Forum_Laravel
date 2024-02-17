@@ -19,7 +19,7 @@
 
         public function findOne(string $id): stdClass
         {
-
+            return $this->repository->findOne($id);
         }
         
     }
