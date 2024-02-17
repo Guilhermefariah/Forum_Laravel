@@ -22,4 +22,9 @@
             return $this->repository->findOne($id);
         }
         
+        public function delete()
+        {
+            
+        }
+    
     }
