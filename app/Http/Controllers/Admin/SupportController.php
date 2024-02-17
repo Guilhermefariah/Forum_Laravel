@@ -50,5 +50,7 @@ class SupportController extends Controller
         }
         $support->update($request->only(['
         subject, body']));
+
+        return redirect()->route('supports.index');
     }   
 }
