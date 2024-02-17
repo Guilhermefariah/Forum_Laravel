@@ -28,7 +28,11 @@
             string $body
         ): stdClass
         {
-
+            return $this->repository->new(
+                $subject,
+                $status,
+                $body
+            );
         }
         
         public function delete(string $id): void
