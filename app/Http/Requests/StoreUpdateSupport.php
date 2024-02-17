@@ -21,7 +21,7 @@ class StoreUpdateSupport extends FormRequest
      */
     public function rules(): array
     {
-        return [
+        $rules = [
             'subject' => 'required|min:3|max:255|unique:supports',
             'body' => [
                 'required',
@@ -29,5 +29,8 @@ class StoreUpdateSupport extends FormRequest
                 'max:10000'
             ],
         ];
+
+        
+        return $rules;
     }
 }
