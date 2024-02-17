@@ -5,11 +5,12 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUpdateSupport;
 use App\Models\Support;
+use App\Services\SupportService;
 use Illuminate\Http\Request;
 
 class SupportController extends Controller
 {
-    public function __construct()
+    public function __construct(protected SupportService $service)
     {
         
     }
