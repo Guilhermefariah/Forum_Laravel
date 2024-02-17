@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class SupportController extends Controller
 {
+    public function __construct()
+    {
+        
+    }
     public function index(Support $support)
     {
         $supports = $support->all();
