@@ -23,6 +23,11 @@ class StoreUpdateSupport extends FormRequest
     {
         return [
             'subject' => 'required|min:3|max:255|unique:supports',
+            'body' => [
+                'required',
+                'min:3',
+                'max:10000'
+            ],
         ];
     }
 }
