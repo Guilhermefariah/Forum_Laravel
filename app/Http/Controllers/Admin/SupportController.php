@@ -53,9 +53,7 @@ class SupportController extends Controller
         // $support->body = $request->body;
         // $support->save();
 
-        $support->update($request->only([
-            'subject', 'body'
-        ]));
+        $support->update($request->validated());
 
         return redirect()->route('supports.index');
     }   
