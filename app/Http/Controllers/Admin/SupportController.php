@@ -48,5 +48,7 @@ class SupportController extends Controller
         if(!$support = $support->find($id)){
             return back();
         }
-    }
+        $support->update($request->only(['
+        subject, body']));
+    }   
 }
