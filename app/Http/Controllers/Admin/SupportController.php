@@ -11,12 +11,12 @@ use Illuminate\Http\Request;
 class SupportController extends Controller
 {
     public function __construct(protected SupportService $service)
-    {
-        
+    {    
+
     }
     public function index(Support $support)
     {
-        $supports = $support->all();
+        $supports = $this->service->getAll();
         return view('admin/supports/index', compact('supports'));
     }
     
