@@ -30,7 +30,9 @@ class StoreUpdateSupport extends FormRequest
             ],
         ];
 
-        
+        if ($this->method() ===  'PUT'){
+            
+        }
         return $rules;
     }
 }
