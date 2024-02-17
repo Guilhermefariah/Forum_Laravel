@@ -7,5 +7,6 @@
 </ul>
 
 <form action="{{ route('supports.destroy', $support->id) }}" method="POST">
+    @method('DELETE')
     <button type="submit">Deletar</button>
 </form>
