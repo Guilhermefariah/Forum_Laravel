@@ -34,6 +34,10 @@
                 $body
             );
         }
+
+        public function update(
+            
+        )
         
         public function delete(string $id): void
         {
