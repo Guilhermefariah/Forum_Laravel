@@ -61,6 +61,8 @@ class SupportController extends Controller
 
     public function destroy(string|int $id)
     {
-        
+        if(!$support = Support::find($id)){
+            return back();
+        }
     }
 }
