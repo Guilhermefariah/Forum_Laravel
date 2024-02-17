@@ -14,6 +14,7 @@ class SupportController extends Controller
         $supports = $support->all();
         return view('admin/supports/index', compact('supports'));
     }
+    
     public function show(string|int $id)
     {
         if (!$support = Support::find($id)) {
@@ -27,6 +28,7 @@ class SupportController extends Controller
     {
         return view('admin/supports/create');
     }
+
     public function store(StoreUpdateSupport $request, Support $support)
     {
         $data = $request->validated();
@@ -36,6 +38,7 @@ class SupportController extends Controller
         
         return redirect()->route('supports.index');
     }
+
     public function edit(Support $support, string|int $id)
     {
         if (!$support = $support->where('id', $id)->first()){
@@ -44,6 +47,7 @@ class SupportController extends Controller
         
         return view('admin/supports/edit', compact('support'));
     }
+    
     public function update(StoreUpdateSupport $request, Support $support, string $id)
     {
         if(!$support = $support->find($id)){
