@@ -22,7 +22,7 @@ class StoreUpdateSupport extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'subject' => 'required|min:3|max:255|unique:supports',
         ];
     }
 }
