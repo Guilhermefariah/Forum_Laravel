@@ -22,9 +22,13 @@
             return $this->repository->findOne($id);
         }
 
-        public function new(): stdClass
+        public function new(
+            string $subject,
+            string $status,
+            string $body
+        ): stdClass
         {
-            
+
         }
         
         public function delete(string $id): void
