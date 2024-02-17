@@ -49,8 +49,6 @@ class SupportController extends Controller
     {
         // if(!$support = $support->where('id', $id)->first()){
         if(!$support = $this->service->findOne($id)){
-
-        
             return back();
         }
         
@@ -73,11 +71,7 @@ class SupportController extends Controller
 
     public function destroy(string|int $id)
     {
-        if(!$support = Support::find($id)){
-            return back();
-        }
-
-        $support->delete();
+        $this->service->delete($id);
         return redirect()->route('supports.index');
     }
 }
