@@ -48,6 +48,10 @@ class SupportController extends Controller
         if(!$support = $support->find($id)){
             return back();
         }
+        $support->subject = $request->subject;
+        $support->body = $request->body;
+        $support->save();
+
         $support->update($request->only(['
         subject, body']));
 
