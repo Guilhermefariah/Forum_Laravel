@@ -21,9 +21,9 @@ class SupportController extends Controller
         return view('admin/supports/index', compact('supports'));
     }
     
-    public function show(string|int $id)
+    public function show(string $id)
     {
-        if (!$support = Support::find($id)) {
+        if (!$support = $this->service->findOne($id)) {
             return back();
         };
         
