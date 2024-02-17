@@ -4,7 +4,7 @@
     {{-- <input type="hidden" value="{{ csrf_token() }}" name="_token"> --}}
     @csrf()
     {{-- <input type="text" value="PUT" name="_method"> --}}
-    @method('put')
+    @method('PUT')
     <input type="text" name="subject" value="{{ $support->subject }}" placeholder="Assunto">
     <textarea name="body" cols="30" rows="5" placeholder="Descrição">{{ $support->body}}</textarea>
     <button type="submit">Enviar</button>
