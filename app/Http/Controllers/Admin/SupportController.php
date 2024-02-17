@@ -29,7 +29,7 @@ class SupportController extends Controller
     }
     public function store(StoreUpdateSupport $request, Support $support)
     {
-        $data = $request->all();
+        $data = $request->validated();
         $data['status']= 'a';
 
         $support->create($data);
