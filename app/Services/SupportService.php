@@ -21,6 +21,11 @@
         {
             return $this->repository->findOne($id);
         }
+
+        public function new(): stdClass
+        {
+            
+        }
         
         public function delete(string $id): void
         {
