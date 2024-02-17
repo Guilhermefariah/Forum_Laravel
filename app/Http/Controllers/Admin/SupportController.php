@@ -58,4 +58,9 @@ class SupportController extends Controller
 
         return redirect()->route('supports.index');
     }   
+
+    public function destroy(string|int $id)
+    {
+        
+    }
 }
