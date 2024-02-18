@@ -14,7 +14,9 @@ use App\Http\Requests\StoreUpdateSupport;
         public static function makeFromRequest(StoreUpdateSupport $request): self
         {
             return new self(
-                
+                $request->subject,
+                'a',
+                $request->body
             );
         }
 
