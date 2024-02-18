@@ -1,6 +1,7 @@
 <?php 
     namespace App\Services;
 
+use App\DTO\CreateSupportDTO;
 use Illuminate\Cache\Repository;
 use SebastianBergmann\Type\NullType;
 use stdClass;
@@ -24,17 +25,9 @@ use stdClass;
             return $this->repository->findOne($id);
         }
 
-        public function new(
-            string $subject,
-            string $status,
-            string $body
-        ): stdClass
-        {
-            return $this->repository->new(
-                $subject,
-                $status,
-                $body
-            );
+        public function new(CreateSupportDTO $dto): stdClass
+        {                   
+            return $this->repository->new($dto);
         }
 
         public function update(
