@@ -54,7 +54,8 @@ class SupportController extends Controller
     }
     
     public function update(StoreUpdateSupport $request, Support $support, string $id)
-    {
+    {   
+        $this->service->update();
         if(!$support = $support->find($id)){
             return back();
         }
