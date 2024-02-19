@@ -1,10 +1,12 @@
 <?php
 
-use App\DTO\CreateSupportDTO;
-use App\DTO\UpdateSupportDTO;
-use App\Models\Support;
-use App\Repositories\SupportRepositoryInterface;
-use GuzzleHttp\Psr7\Query;
+    namespace App\Repositories;
+    
+    use App\DTO\CreateSupportDTO;
+    use App\DTO\UpdateSupportDTO;
+    use App\Models\Support;
+    use App\Repositories\SupportRepositoryInterface;
+    use stdClass;
 
     class SupportEloquentORM implements SupportRepositoryInterface
     {
@@ -29,7 +31,7 @@ use GuzzleHttp\Psr7\Query;
                         ->toArray();
         }
 
-        public function findOne(string $id): stdClass | null
+        public function findOne(string $id): stdClass| null
         {
             $support = $this->model->find($id);
             if (!$support){
