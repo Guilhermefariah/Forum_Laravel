@@ -46,7 +46,7 @@ use GuzzleHttp\Psr7\Query;
         public function new(CreateSupportDTO $dto): stdClass
         {
             return (object) $this->model->create(
-                
+                (array) $dto
             );
         }
 
