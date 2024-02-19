@@ -52,7 +52,7 @@ use GuzzleHttp\Psr7\Query;
 
         public function update(UpdateSupportDTO $dto): stdClass | null
         {
-            $support = $this->model->find();
+            $support = $this->model->find($dto->id);
 
         }
     }
