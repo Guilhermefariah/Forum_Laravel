@@ -31,7 +31,11 @@ use GuzzleHttp\Psr7\Query;
 
         public function findOne(string $id): stdClass | null
         {
-            return (object) $this->model->find($id)->toArray();
+            $support = $this->model->find($id);
+            if (!$support){
+                return null;
+            }
+            return (object) $support->toArray();
         }
 
         public function delete(string $id): void
