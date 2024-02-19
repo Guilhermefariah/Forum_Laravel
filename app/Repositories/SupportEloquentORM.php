@@ -40,7 +40,7 @@ use GuzzleHttp\Psr7\Query;
 
         public function delete(string $id): void
         {
-
+            $this->model->findOrFail();
         }
 
         public function new(CreateSupportDTO $dto): stdClass
