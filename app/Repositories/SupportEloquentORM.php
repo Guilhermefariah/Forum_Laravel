@@ -19,6 +19,7 @@
 
         public function getAll(string $filter = null): array
         {
+           
             return $this->model
                         ->where(function ($query) use ($filter) {
                              if($filter){
@@ -27,7 +28,7 @@
 
                              }
                         })
-                        ->all()
+                        ->get()
                         ->toArray();
         }
 
