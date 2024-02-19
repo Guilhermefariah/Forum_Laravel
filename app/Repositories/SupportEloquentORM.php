@@ -16,7 +16,7 @@ use App\Repositories\SupportRepositoryInterface;
 
         public function getAll(string $filter = null): array
         {
-            return $this->model->all()->toArray();
+            return $this->model->paginate()->toArray();
         }
 
         public function findOne(string $id): stdClass | null
