@@ -25,7 +25,7 @@ use GuzzleHttp\Psr7\Query;
 
                              }
                         })
-                        ->paginate()
+                        ->all()
                         ->toArray();
         }
 
