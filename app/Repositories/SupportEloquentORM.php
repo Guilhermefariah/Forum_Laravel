@@ -60,5 +60,6 @@ use GuzzleHttp\Psr7\Query;
                 (array) $dto
             );
 
+            return (object) $support->toArray();
         }
     }
