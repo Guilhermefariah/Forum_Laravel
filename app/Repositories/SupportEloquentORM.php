@@ -13,14 +13,17 @@ use App\Repositories\SupportRepositoryInterface;
         {
             
         }
+
         public function getAll(string $filter = null): array
         {
-
+            return $this->model->all()->toArray();
         }
+
         public function findOne(string $id): stdClass | null
         {
 
         }
+
         public function delete(string $id): void
         {
 
