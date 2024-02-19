@@ -45,9 +45,11 @@ use GuzzleHttp\Psr7\Query;
 
         public function new(CreateSupportDTO $dto): stdClass
         {
-            return (object) $this->model->create(
+            $support = $this->model->create(
                 (array) $dto
             );
+
+            return (object) $support->toArray();
         }
 
         public function update(UpdateSupportDTO $dto): stdClass | null
