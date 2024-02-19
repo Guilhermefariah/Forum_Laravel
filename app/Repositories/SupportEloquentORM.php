@@ -16,7 +16,10 @@ use App\Repositories\SupportRepositoryInterface;
 
         public function getAll(string $filter = null): array
         {
-            return $this->model->paginate()->toArray();
+            return $this->model
+                        ->where('subject', $filter)
+                        ->paginate()
+                        ->toArray();
         }
 
         public function findOne(string $id): stdClass | null
