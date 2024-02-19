@@ -21,6 +21,7 @@ use GuzzleHttp\Psr7\Query;
                         ->where(function ($query) use ($filter) {
                              if($filter){
                                 $query->where('subject', $filter);
+                                $query->orWhere('body', 'like', "%{$filter}%");
 
                              }
                         })
