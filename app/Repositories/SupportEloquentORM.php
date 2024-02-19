@@ -4,6 +4,7 @@ use App\DTO\CreateSupportDTO;
 use App\DTO\UpdateSupportDTO;
 use App\Models\Support;
 use App\Repositories\SupportRepositoryInterface;
+use GuzzleHttp\Psr7\Query;
 
     class SupportEloquentORM implements SupportRepositoryInterface
     {
@@ -17,8 +18,9 @@ use App\Repositories\SupportRepositoryInterface;
         public function getAll(string $filter = null): array
         {
             return $this->model
-                        ->where(function () use ($filter) {
+                        ->where(function ($query) use ($filter) {
                              if($filter){
+                                $query->where('subject', $filter);
 
                              }
                         })
