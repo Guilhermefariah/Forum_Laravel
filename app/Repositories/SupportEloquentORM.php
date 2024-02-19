@@ -17,7 +17,9 @@ use App\Repositories\SupportRepositoryInterface;
         public function getAll(string $filter = null): array
         {
             return $this->model
-                        ->where('subject', $filter)
+                        ->where(function () use () {
+                             
+                        })
                         ->paginate()
                         ->toArray();
         }
