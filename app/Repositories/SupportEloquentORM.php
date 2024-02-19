@@ -56,5 +56,9 @@ use GuzzleHttp\Psr7\Query;
                 return null;
             }
 
+            $support->update(
+                (array) $dto
+            );
+
         }
     }
