@@ -20,7 +20,7 @@ use stdClass;
             return $this->repository->getAll($filter);
         }
 
-        public function findOne(string $id): stdClass | null
+        public function findOne(string $id): stdClass|null
         {
             return $this->repository->findOne($id);
         }
@@ -30,7 +30,7 @@ use stdClass;
             return $this->repository->new($dto);
         }
 
-        public function update(UpdateSupportDTO $dto): stdClass | null
+        public function update(UpdateSupportDTO $dto): stdClass|null
         {
             return $this->repository->update($dto);
         }

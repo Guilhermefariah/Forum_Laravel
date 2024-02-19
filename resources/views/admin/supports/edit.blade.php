@@ -8,7 +8,7 @@
 
 <form action="{{ route('supports.update', $support->id)}}" method="POST">
     {{-- <input type="hidden" value="{{ csrf_token() }}" name="_token"> --}}
-    @csrf()
+    @csrf
     {{-- <input type="text" value="PUT" name="_method"> --}}
     @method('PUT')
     <input type="text" name="subject" value="{{ $support->subject }}" placeholder="Assunto">

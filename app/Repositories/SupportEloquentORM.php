@@ -57,7 +57,7 @@
 
         public function update(UpdateSupportDTO $dto): stdClass | null
         {
-            if($support = $this->model->find($dto->id)){
+            if(!$support = $this->model->find($dto->id)){
                 return null;
             }
 
