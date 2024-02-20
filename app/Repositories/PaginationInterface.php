@@ -10,4 +10,5 @@
         public function isLastPage(): bool;
         public function currentPage(): int;
         public function getNumberNextPage(): int;
+        public function getNumberPreviouspage(): int;
     }
