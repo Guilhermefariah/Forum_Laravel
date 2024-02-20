@@ -3,6 +3,6 @@
     
     interface PaginationInterface
     {
-        
+        //@return stdClass[]
         public function items(): array;
     }
