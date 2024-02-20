@@ -15,6 +15,11 @@ use stdClass;
         )
         {}
 
+        public function paginate()
+        {
+            
+        }
+
         public function getAll(string $filter = null): array
         {
             return $this->repository->getAll($filter);
