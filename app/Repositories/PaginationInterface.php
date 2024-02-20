@@ -4,4 +4,5 @@
     interface PaginationInterface
     {
         
+        public function items(): array;
     }
