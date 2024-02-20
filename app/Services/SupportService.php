@@ -15,7 +15,7 @@ use stdClass;
         )
         {}
 
-        public function paginate()
+        public function paginate(int $page = 1, $totalPerPage = 15, string $filter = null)
         {
             
         }
