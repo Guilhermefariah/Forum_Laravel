@@ -8,31 +8,38 @@
                 protected LengthAwarePaginator $paginator
             ){}
             //@return stdClass[]
-            public function items(): array{
+            public function items(): array
+            {
 
             }
 
-            public function total(): int{
+            public function total(): int
+            {
+                return $this->paginator->total();
+            }
+
+            public function isFirstPage(): bool
+            {
 
             }
 
-            public function isFirstPage(): bool{
-
-            }
-
-            public function isLastPage(): bool{
+            public function isLastPage(): bool
+            {
 
             }
             
-            public function currentPage(): int{
+            public function currentPage(): int
+            {
 
             }
             
-            public function getNumberNextPage(): int{
+            public function getNumberNextPage(): int
+            {
 
             }
 
-            public function getNumberPreviouspage(): int{
+            public function getNumberPreviouspage(): int
+            {
 
             }
     }
