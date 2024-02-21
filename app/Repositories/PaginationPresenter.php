@@ -15,7 +15,7 @@
 
             public function total(): int
             {
-                return $this->paginator->total();
+                return $this->paginator->total() ?? 0;
             }
 
             public function isFirstPage(): bool
