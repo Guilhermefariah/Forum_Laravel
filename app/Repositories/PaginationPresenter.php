@@ -30,7 +30,7 @@
             
             public function currentPage(): int
             {
-
+                return $this->paginator->currentPage() ?? 1;
             }
             
             public function getNumberNextPage(): int
