@@ -35,7 +35,7 @@
             
             public function getNumberNextPage(): int
             {
-
+                return $this->paginator->currentPage() + 1;
             }
 
             public function getNumberPreviouspage(): int
