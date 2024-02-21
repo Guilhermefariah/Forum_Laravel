@@ -25,7 +25,7 @@
 
             public function isLastPage(): bool
             {
-                
+                return $this->paginator->currentPage() === $this->paginator->lastPage();
             }
             
             public function currentPage(): int
