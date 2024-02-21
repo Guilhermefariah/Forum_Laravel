@@ -40,6 +40,6 @@
 
             public function getNumberPreviouspage(): int
             {
-
+                return $this->paginator->currentPage() -1;
             }
     }
