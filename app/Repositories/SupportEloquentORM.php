@@ -25,7 +25,7 @@
                             }
                         })
                         ->paginate($totalPerPage, ['*'], 'page', $page);
-            dd($result->toArray());
+            dd($result);
                              
         }
 
