@@ -1,6 +1,7 @@
 
 # Fórum Laravel 10
-![Texto Alternativo](/img/laravel.png)
+
+![Texto Alternativo](/img/forum.png) ![Texto Alternativo](/img/laravel.png)
 
 # Introdução! 
 Bem-vindo ao Fórum Laravel 10! Este projeto é baseado no Framework Laravel e utiliza Docker
@@ -79,4 +80,4 @@ problemas (issues) ou envie solicitações de pull (pull requests) para melhorar
 
 Licença
 
-Este projeto é licenciado sobre a <strong>licença MIT</strong>.
+Este projeto é licenciado sobre a licença <strong>MIT</strong>.
