@@ -74,6 +74,9 @@ Acesse o projeto
 
 Contribuição
 
-
 Sinta-se à vontade para contribuir contribuir com o desenvolvimento do Fórum Laravel 10. 
 problemas (issues) ou envie solicitações de pull (pull requests) para melhorar o projeto.
+
+Licença
+
+Este projeto é licenciado sobre a <strong>licença MIT</strong>.
