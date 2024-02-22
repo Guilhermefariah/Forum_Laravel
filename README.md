@@ -1,7 +1,8 @@
 
-# Laravel 10 com PHP 
+# Fórum Laravel 10
+![Texto Alternativo](/img/laravel.png)
 
-
+ 
 ### Passo a passo
 Clone Repositório
 ```sh
