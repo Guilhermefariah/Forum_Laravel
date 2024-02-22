@@ -2,8 +2,11 @@
 # Fórum Laravel 10
 ![Texto Alternativo](/img/laravel.png)
 
- 
-### Passo a passo
+# Introdução! 
+Bem-vindo ao Fórum Laravel 10! Este projeto é baseado no Framework Laravel e utiliza Docker
+para facilitar o ambiente de desenvolvimento. 
+
+### Passo a Passo!
 Clone Repositório
 ```sh
 git clone -b https://github.com/Guilhermefariah/Forum_Laravel laravel-10
