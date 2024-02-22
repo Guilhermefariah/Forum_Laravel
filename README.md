@@ -24,7 +24,7 @@ cp .env.example .env
 
 Atualize as variáveis de ambiente do arquivo .env
 ```dosini
-APP_NAME="Laravel"
+APP_NAME="Fórum Laravel 10"
 APP_URL=http://localhost:8989
 
 DB_CONNECTION=mysql
@@ -70,3 +70,11 @@ php artisan key:generate
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
+
+
+Contribuição
+
+``` sh
+Sinta-se à vontade para contribuir contribuir com o desenvolvimento do Fórum Laravel 10. 
+problemas (issues) ou envie solicitações de pull (pull requests) para melhorar o projeto.
+```
