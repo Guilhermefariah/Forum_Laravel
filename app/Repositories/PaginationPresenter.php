@@ -1,6 +1,7 @@
 <?php
     namespace App\Repositories;
     use Illuminate\Pagination\LengthAwarePaginator;
+use stdClass;
 
     class PaginationPresenter implements PaginationInterface
     {       
@@ -56,8 +57,9 @@
             {
                 $response = [];
                 foreach ($items as  $item) {
-                    # code...
+                    $stdClassObject = new stdClass;
+          
                 }
-                return $response;
+                return $response;   
             }
     }
