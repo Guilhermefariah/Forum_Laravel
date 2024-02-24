@@ -23,8 +23,6 @@ class SupportController extends Controller
             filter: $request->filter
         );
 
-        dd($supports);
-
         return view('admin/supports/index', compact('supports'));
     }
 
