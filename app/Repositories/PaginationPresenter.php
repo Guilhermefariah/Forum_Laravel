@@ -10,8 +10,8 @@
             //@return stdClass[]
             public function items(): array
             {
-
-            }
+                return $this->paginator->items();
+            }   
 
             public function total(): int
             {
