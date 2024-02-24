@@ -8,14 +8,18 @@
                @var stdClass[]
             */
             private array $items;
-            
+
             public function __construct(
                 protected LengthAwarePaginator $paginator
-            ){}
+            )
+            {
+                $this->items = $this->paginator->items();
+            }
             //@return stdClass[]
             public function items(): array
             {
                 //return $this->paginator->items();
+
             }   
 
             public function total(): int
