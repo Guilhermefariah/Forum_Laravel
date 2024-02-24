@@ -13,7 +13,7 @@
                 protected LengthAwarePaginator $paginator
             )
             {
-                $this->items = $this->paginator->items();
+                $this->items = $this->resolveItems($this->paginator->items());
             }
             //@return stdClass[]
             public function items(): array
@@ -50,5 +50,14 @@
             public function getNumberPreviouspage(): int
             {
                 return $this->paginator->currentPage() -1;
+            }
+            
+            private function resolveItems(array $items): array
+            {
+                $response = [];
+                foreach ($items as  $item) {
+                    # code...
+                }
+                return $response;
             }
     }
