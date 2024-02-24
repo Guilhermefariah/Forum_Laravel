@@ -18,8 +18,8 @@
             //@return stdClass[]
             public function items(): array
             {
+                return $this->items;
                 //return $this->paginator->items();
-
             }   
 
             public function total(): int
