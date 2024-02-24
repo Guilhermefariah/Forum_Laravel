@@ -4,13 +4,14 @@
 
     class PaginationPresenter implements PaginationInterface
     {
+            private array $items;
             public function __construct(
                 protected LengthAwarePaginator $paginator
             ){}
             //@return stdClass[]
             public function items(): array
             {
-                return $this->paginator->items();
+                //return $this->paginator->items();
             }   
 
             public function total(): int
