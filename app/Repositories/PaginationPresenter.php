@@ -3,8 +3,12 @@
     use Illuminate\Pagination\LengthAwarePaginator;
 
     class PaginationPresenter implements PaginationInterface
-    {
+    {       
+            /*
+               @var stdClass[]
+            */
             private array $items;
+            
             public function __construct(
                 protected LengthAwarePaginator $paginator
             ){}
