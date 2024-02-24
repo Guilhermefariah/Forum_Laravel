@@ -3,6 +3,7 @@
 
 use App\DTO\CreateSupportDTO;
 use App\DTO\UpdateSupportDTO;
+use App\Repositories\PaginationInterface;
 use App\Repositories\SupportRepositoryInterface;
 use Illuminate\Cache\Repository;
 use SebastianBergmann\Type\NullType;
@@ -15,7 +16,7 @@ use stdClass;
         )
         {}
 
-        public function paginate(int $page = 1, $totalPerPage = 15, string $filter = null)
+        public function paginate(int $page = 1, $totalPerPage = 15, string $filter = null): PaginationInterface
         {
             return $this->repository->paginate(page: $page, totalPerPage: $totalPerPage, filter: $filter);
         }

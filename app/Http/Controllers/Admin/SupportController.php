@@ -13,27 +13,29 @@ use Illuminate\Http\Request;
 class SupportController extends Controller
 {
     public function __construct(protected SupportService $service)
-    {    
-
+    {
     }
     public function index(Request $request)
     {
-        $supports = $this->service->paginate(page: $request->get('page', 1),
-                                            totalPerPage: $request->get('per_page', 15),
-                                            filter: $request->filter
-                                        );
+        $supports = $this->service->paginate(
+            page: $request->get('page', 1),
+            totalPerPage: $request->get('per_page', 15),
+            filter: $request->filter
+        );
+
+        dd($supports);
 
         return view('admin/supports/index', compact('supports'));
     }
-    
+
     public function show(string $id)
     {
         if (!$support = $this->service->findOne($id)) {
             return back();
         };
-        
+
         return view('admin/supports/show', compact('support'));
-    }   
+    }
 
     public function create()
     {
@@ -50,23 +52,23 @@ class SupportController extends Controller
     public function edit(string $id)
     {
         // if(!$support = $support->where('id', $id)->first()){
-        if(!$support = $this->service->findOne($id)){
+        if (!$support = $this->service->findOne($id)) {
             return back();
         }
-        
+
         return view('admin/supports/edit', compact('support'));
     }
-    
+
     public function update(StoreUpdateSupport $request, Support $support, string $id)
-    {   
+    {
         $support =  $this->service->update(UpdateSupportDTO::makeFromRequest($request));
 
-        if(!$support){
+        if (!$support) {
             return back();
         }
 
         return redirect()->route('supports.index');
-    }   
+    }
 
     public function destroy(string|int $id)
     {
