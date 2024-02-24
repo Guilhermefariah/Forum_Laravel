@@ -58,7 +58,11 @@ use stdClass;
                 $response = [];
                 foreach ($items as  $item) {
                     $stdClassObject = new stdClass;
-          
+                    foreach ($item->toArray() as $key => $value) {
+                        $stdClassObject->{$key} = $value;
+                    }
+                    dd($stdClassObject);
+                    
                 }
                 return $response;   
             }
