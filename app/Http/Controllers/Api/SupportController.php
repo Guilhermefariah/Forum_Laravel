@@ -40,7 +40,7 @@ class SupportController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $support = $this->service->findOne($id);
     }
 
     /**
