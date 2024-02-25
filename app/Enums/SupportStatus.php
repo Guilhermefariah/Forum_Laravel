@@ -14,5 +14,6 @@
                     return $status->value;
                 }
             }
+            throw new \ValueError("$status not is valid");
         }
     }
