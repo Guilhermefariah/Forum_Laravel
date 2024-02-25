@@ -3,11 +3,14 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Services\SupportService;
 use Illuminate\Http\Request;
 
 class SupportController extends Controller
 {
-    public function __construct()
+    public function __construct(
+        protected SupportService $service
+    )
     {
         
     }
