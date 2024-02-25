@@ -40,7 +40,9 @@ class SupportController extends Controller
      */
     public function show(string $id)
     {
-        $support = $this->service->findOne($id);
+        if(!$support = $this->service->findOne($id)){
+            return response()->json();
+        }
     }
 
     /**
