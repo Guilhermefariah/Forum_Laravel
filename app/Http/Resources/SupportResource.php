@@ -17,6 +17,7 @@ class SupportResource extends JsonResource
         return [
             'identify' => $this->id,
             'subject' => $this->subject,
+            'content' => $this->body,
         ];
     }
 }
