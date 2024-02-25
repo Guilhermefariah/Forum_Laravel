@@ -1,7 +1,7 @@
 @if (isset($paginator))
 
 @php
-    $queryParams = (isset($appends) && gettype($appends) === 'array') 
+    $queryParams = (isset($appends) && gettype($appends) === 'array') ? '&' . http_build_query($appends) : ''
 @endphp
 
     <nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between">
