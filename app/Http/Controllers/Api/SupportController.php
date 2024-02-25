@@ -64,5 +64,7 @@ class SupportController extends Controller
         }
 
         $this->service->delete($id);
+
+        return response()->json([], Response::HTTP_NO_CONTENT);
     }
 }
