@@ -6,4 +6,9 @@
         case A = 'Open';
         case C = 'Closed';
         case P = 'Pendent';
+
+        public static function fromValue(string $value): string
+        {
+            
+        }
     }
