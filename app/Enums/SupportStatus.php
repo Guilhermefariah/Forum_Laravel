@@ -9,6 +9,8 @@
 
         public static function fromValue(string $value): string
         {
-            
+            foreach (self::cases() as $status) {
+                
+            }
         }
     }
