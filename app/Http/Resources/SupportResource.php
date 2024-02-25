@@ -18,6 +18,7 @@ class SupportResource extends JsonResource
             'identify' => $this->id,
             'subject' => $this->subject,
             'content' => $this->body,
+            'dt_created' => $this->created_at
         ];
     }
 }
