@@ -1,5 +1,9 @@
 @if (isset($paginator))
 
+@php
+    $queryParams = (isset($appends) && gettype($appends) === 'array') 
+@endphp
+
     <nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between">
         {{-- Previous Page Link --}}
         @if ($paginator->isFirstPage())
