@@ -7,10 +7,12 @@
         case C = 'Closed';
         case P = 'Pendent';
 
-        public static function fromValue(string $value): string
+        public static function fromValue(string $status): string
         {
             foreach (self::cases() as $status) {
-                
+                if($status === $status->name){
+                    return $status->value;
+                }
             }
         }
     }
