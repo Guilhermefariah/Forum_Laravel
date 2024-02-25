@@ -29,7 +29,9 @@ class SupportController extends Controller
      */
     public function store(StoreUpdateSupport $request)
     {
-        $this->service->new(CreateSupportDTO::makeFromRequest($request));
+        $support = $this->service->new(CreateSupportDTO::makeFromRequest($request));
+
+        return $support;
     }
 
     /**
