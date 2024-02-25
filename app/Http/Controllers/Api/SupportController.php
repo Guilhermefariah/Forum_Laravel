@@ -14,9 +14,7 @@ class SupportController extends Controller
 {
     public function __construct(
         protected SupportService $service
-    )
-    {
-        
+    ) {
     }
     /**
      * Display a listing of the resource.
@@ -41,7 +39,7 @@ class SupportController extends Controller
      */
     public function show(string $id)
     {
-        if(!$support = $this->service->findOne($id)){
+        if (!$support = $this->service->findOne($id)) {
             return response()->json(['error' => 'Not Found'], Response::HTTP_NOT_FOUND);
         }
 
@@ -61,6 +59,8 @@ class SupportController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        if (!$support = $this->service->findOne($id)) {
+            return response()->json(['error' => 'Not Found'], Response::HTTP_NOT_FOUND);
+        }
     }
 }
