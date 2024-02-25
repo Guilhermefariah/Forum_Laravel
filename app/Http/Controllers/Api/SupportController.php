@@ -41,7 +41,7 @@ class SupportController extends Controller
     public function show(string $id)
     {
         if(!$support = $this->service->findOne($id)){
-            return response()->json();
+            return response()->json(['error' => 'Not Found'], 404);
         }
     }
 
