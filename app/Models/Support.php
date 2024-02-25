@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\SupportStatus;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,4 +15,6 @@ class Support extends Model
         'body',
         'status'
     ];
+    
+    protected $casts = ['status' => SupportStatus::class];
 }
