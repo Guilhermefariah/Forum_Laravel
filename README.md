@@ -25,7 +25,9 @@ Criação de models para representar entidades no banco de dados, seguindo as pr
 
 ## 🗃️ Repositories
 Adoção do padrão Repository para isolar a lógica de acesso a dados, facilitando a manutenção e testabilidade do código.
- 
+
+## ⚙️ Services
+Implementação de Services para encapsular a lógica de negócios, promovendo uma separação clara entre as camadas da aplicação.
 
 
 
