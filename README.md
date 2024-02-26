@@ -13,17 +13,18 @@ para facilitar o ambiente de desenvolvimento.
 Utilização de DTOs para estruturar e transferir dados entre camadas, promovendo uma comunicação
 clara e coesa.
 
-## 📃 Enumerações (Enum)
+## 📃 Enums
 Implementação de Enums para representar conjuntos fixos de valores, proporcionando consistência e legibilidade ao código.
 
 ## 💻 Helpers 
 Desenvolvimento de funções utílitarias (Helpers) para simplificar tarefas repetitivas e melhorar a 
 modularidade do código.
 
-## 🎲 Modelos (Models)
-Criação de modelos para representar entidades no banco de dados, seguindo as práticas de modelagem de dados eficientes.
+## 🎲 Models
+Criação de models para representar entidades no banco de dados, seguindo as práticas de modelagem de dados eficientes.
 
-
+## 🗃️ Repositories
+Adoção do padrão Repository para isolar a lógica de acesso a dados, facilitando a manutenção e testabilidade do código.
  
 
 
