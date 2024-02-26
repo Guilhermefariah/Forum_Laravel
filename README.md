@@ -10,8 +10,13 @@ para facilitar o ambiente de desenvolvimento.
 # Principais Componentes
 
 # 🧱 DTOs (Data Transfer Objects):
-Utilização de DTOs para estruturar e transferir dados entre camadas, promevendo uma comunicação
+Utilização de DTOs para estruturar e transferir dados entre camadas, promovendo uma comunicação
 clara e coesa.
+
+# 📃 Enumerações (Enum):
+Implementação de Enums para representar conjuntos fixos de valores, proporcionando consistência e legibilidade ao código.
+
+
 
 ### Passo a Passo!
 Clone Repositório
