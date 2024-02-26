@@ -13,7 +13,7 @@ para facilitar o ambiente de desenvolvimento.
 Utilização de DTOs para estruturar e transferir dados entre camadas, promovendo uma comunicação
 clara e coesa.
 
-## 📃 Enums
+## 📈 Enums
 Implementação de Enums para representar conjuntos fixos de valores, proporcionando consistência e legibilidade ao código.
 
 ## 💻 Helpers 
@@ -29,9 +29,11 @@ Adoção do padrão Repository para isolar a lógica de acesso a dados, facilita
 ## ⚙️ Services
 Implementação de Services para encapsular a lógica de negócios, promovendo uma separação clara entre as camadas da aplicação.
 
+## 📃 Pagination
+Integração de recursos do Pagination para otimizar a apresentação de grandes conjuntos de dados, garantindo a experiência do usúario mais fluída e eficiente.
 
 
-### Passo a Passo!
+### Como Inciar o Projeto!
 Clone Repositório
 ```sh
 git clone -b https://github.com/Guilhermefariah/Forum_Laravel laravel-10
@@ -40,12 +42,10 @@ git clone -b https://github.com/Guilhermefariah/Forum_Laravel laravel-10
 cd laravel-10
 ```
 
-
 Crie o Arquivo .env
 ```sh
 cp .env.example .env
 ```
-
 
 Atualize as variáveis de ambiente do arquivo .env
 ```dosini
@@ -68,30 +68,25 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
 
-
 Suba os containers do projeto
 ```sh
 docker-compose up -d
 ```
-
 
 Acesse o container app
 ```sh
 docker-compose exec app bash
 ```
 
-
 Instale as dependências do projeto
 ```sh
 composer install
 ```
 
-
 Gere a key do projeto Laravel
 ```sh
 php artisan key:generate
 ```
-
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
