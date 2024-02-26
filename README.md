@@ -9,18 +9,22 @@ para facilitar o ambiente de desenvolvimento.
 
 # Principais Componentes
 
-# 🧱 DTOs (Data Transfer Objects):
+## 🧱 DTOs (Data Transfer Objects)
 Utilização de DTOs para estruturar e transferir dados entre camadas, promovendo uma comunicação
 clara e coesa.
 
-# 📃 Enumerações (Enum):
+## 📃 Enumerações (Enum)
 Implementação de Enums para representar conjuntos fixos de valores, proporcionando consistência e legibilidade ao código.
 
-# 💻 Helpers: 
+## 💻 Helpers 
 Desenvolvimento de funções utílitarias (Helpers) para simplificar tarefas repetitivas e melhorar a 
 modularidade do código.
 
+## 🎲 Modelos (Models)
+Criação de modelos para representar entidades no banco de dados, seguindo as práticas de modelagem de dados eficientes.
 
+
+ 
 
 
 
