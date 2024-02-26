@@ -7,6 +7,12 @@
 Bem-vindo ao Fórum Laravel 10! Este projeto é baseado no Framework Laravel e utiliza Docker
 para facilitar o ambiente de desenvolvimento. 
 
+# Principais Componentes
+
+# 🧱 DTOs (Data Transfer Objects):
+Utilização de DTOs para estruturar e transferir dados entre camadas, promevendo uma comunicação
+clara e coesa.
+
 ### Passo a Passo!
 Clone Repositório
 ```sh
