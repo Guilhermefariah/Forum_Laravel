@@ -16,6 +16,12 @@ clara e coesa.
 # 📃 Enumerações (Enum):
 Implementação de Enums para representar conjuntos fixos de valores, proporcionando consistência e legibilidade ao código.
 
+# 💻 Helpers: 
+Desenvolvimento de funções utílitarias (Helpers) para simplificar tarefas repetitivas e melhorar a 
+modularidade do código.
+
+
+
 
 
 ### Passo a Passo!
