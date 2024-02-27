@@ -52,8 +52,13 @@ class SupportController extends Controller
      */
     public function update(StoreUpdateSupport $request, string $id)
     {
-        $this->service->update(UpdateSupportDTO::makeFromRequest($request))
+        $support = $this->service->update(UpdateSupportDTO::makeFromRequest($request));
+
+        if (!$support) {
+            response()->json(['error' => 'Not Found'], Response::HTTP_NOT_FOUND);
+        }
         
+
     }
 
     /**
