@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <section class="container px-4 mx-auto">
     <header>
         @yield('header')
     </header>
@@ -19,5 +20,6 @@
     <footer>
             $default footer
     </footer>
+    <section class="container px-4 mx-auto">
 </body>
 </html>
