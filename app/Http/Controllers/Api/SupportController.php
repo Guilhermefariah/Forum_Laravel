@@ -34,6 +34,7 @@ class SupportController extends Controller
                                 ->additional([
                                     'meta' => [
                                         'total' => $supports->total(),
+                                        'is_first_page' => $supports->isFirstPage(),
                                     ]
                                 ]);
     }
