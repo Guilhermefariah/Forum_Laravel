@@ -13,7 +13,7 @@
             #default read
     </header>
     <div class="content">
-
+        @yield('content')
     </div>
     <footer>
             $default footer
