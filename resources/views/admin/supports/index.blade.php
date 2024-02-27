@@ -1,3 +1,6 @@
+@extends('admin.layouts.app')
+
+
 <h1>Listagem dos Suportes</h1>
 
 <a href="{{ route('supports.create') }}">Criar Dúvida</a>
