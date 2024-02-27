@@ -1,5 +1,8 @@
 @extends('admin.layouts.app')
 
+@section('content')
+    
+
 
 <h1>Listagem dos Suportes</h1>
 
