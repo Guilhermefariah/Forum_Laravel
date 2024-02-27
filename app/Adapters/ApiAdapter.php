@@ -3,5 +3,8 @@
 
     class ApiAdapter
     {
-        
+        public static function toJson()
+        {
+            
+        }
     }
