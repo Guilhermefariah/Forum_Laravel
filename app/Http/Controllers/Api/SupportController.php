@@ -38,6 +38,8 @@ class SupportController extends Controller
                                         'is_last_page' => $supports->isLastPage(),
                                         'current_page' => $supports->currentPage(),
                                         'next_page' => $supports->getNumberNextPage(),
+                                        'previous_page' => $supports->getNumberPreviouspage(),
+
 
 
                                         
