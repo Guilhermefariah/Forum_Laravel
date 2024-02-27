@@ -35,6 +35,8 @@ class SupportController extends Controller
                                     'meta' => [
                                         'total' => $supports->total(),
                                         'is_first_page' => $supports->isFirstPage(),
+                                        'is_last_page' => $supports->isLastPage(),
+                                        
                                     ]
                                 ]);
     }
