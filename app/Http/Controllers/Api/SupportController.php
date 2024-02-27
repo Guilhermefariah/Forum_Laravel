@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\DTO\Supports\CreateSupportDTO;
+use App\DTO\Supports\UpdateSupportDTO;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUpdateSupport;
 use App\Http\Resources\SupportResource;
@@ -51,7 +52,8 @@ class SupportController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $this->service->update(UpdateSupportDTO::makeFromRequest($request))
+        
     }
 
     /**
