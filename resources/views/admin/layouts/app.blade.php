@@ -11,15 +11,16 @@
 
 <body>
     <section class="container px-4 mx-auto">
-    <header>
-        @yield('header')
-    </header>
-    <div class="content">
-        @yield('content')
-    </div>
-    <footer>
-            $default footer
-    </footer>
+            <div class="sm:flex sm:items-center sm:justify-between">
+                @yield('header')
+            </div>
+            <div class="content">
+                @yield('content')
+            </div>
+            <footer>
+                $default footer
+            </footer>
     <section class="container px-4 mx-auto">
 </body>
+
 </html>

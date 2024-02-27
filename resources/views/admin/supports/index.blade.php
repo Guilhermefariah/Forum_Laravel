@@ -9,8 +9,6 @@
 @section('content')
     
 
-
-
 <a href="{{ route('supports.create') }}">Criar Dúvida</a>
 
 <table>
