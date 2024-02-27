@@ -33,7 +33,7 @@ class SupportController extends Controller
         return SupportResource::collection($supports->items())
                                 ->additional([
                                     'meta' => [
-                                        
+                                        'total' => $supports->total(),
                                     ]
                                 ]);
     }
