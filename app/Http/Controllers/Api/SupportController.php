@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Addapters\ApiAdapter;
+use App\Adapters\ApiAdapter;
 use App\DTO\Supports\CreateSupportDTO;
 use App\DTO\Supports\UpdateSupportDTO;
 use App\Http\Controllers\Controller;
