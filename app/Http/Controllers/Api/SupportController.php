@@ -50,7 +50,7 @@ class SupportController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StoreUpdateSupport $request, string $id)
     {
         $this->service->update(UpdateSupportDTO::makeFromRequest($request))
         
