@@ -3,7 +3,6 @@
 @section('content')
     
 
-
 <h1>Listagem dos Suportes</h1>
 
 <a href="{{ route('supports.create') }}">Criar Dúvida</a>
@@ -33,3 +32,6 @@
 <x-pagination 
     :paginator="$supports" 
     :appends="$filters" />
+
+
+@endsection

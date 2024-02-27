@@ -10,7 +10,7 @@
 
 <body>
     <header>
-            #default read
+        @yield('header')
     </header>
     <div class="content">
         @yield('content')
