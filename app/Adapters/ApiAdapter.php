@@ -8,7 +8,7 @@ use App\Repositories\PaginationInterface;
     {
         public static function toJson(PaginationInterface $data)
         {
-            return DefaultResource::collection($data->items())
+            return DefaultResource::collection(collect($data->items()))
             ->additional([
                 'meta' => [
                     'total' => $data->total(),
