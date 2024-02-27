@@ -1,9 +1,13 @@
 @extends('admin.layouts.app')
 
+@section('header')
+<h1>Listagem dos Suportes</h1>
+@endsection
+
 @section('content')
     
 
-<h1>Listagem dos Suportes</h1>
+
 
 <a href="{{ route('supports.create') }}">Criar Dúvida</a>
 
