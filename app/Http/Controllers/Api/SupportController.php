@@ -55,10 +55,10 @@ class SupportController extends Controller
         $support = $this->service->update(UpdateSupportDTO::makeFromRequest($request));
 
         if (!$support) {
-            response()->json(['error' => 'Not Found'], Response::HTTP_NOT_FOUND);
+            return response()->json(['error' => 'Not Found'], Response::HTTP_NOT_FOUND);
         }
         
-        return new SupportResource($support)
+        return new SupportResource($support);
 
     }
 
