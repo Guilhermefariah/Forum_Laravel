@@ -58,6 +58,7 @@ class SupportController extends Controller
             response()->json(['error' => 'Not Found'], Response::HTTP_NOT_FOUND);
         }
         
+        return new SupportResource($support)
 
     }
 
