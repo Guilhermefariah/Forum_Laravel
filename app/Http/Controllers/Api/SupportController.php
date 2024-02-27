@@ -31,7 +31,11 @@ class SupportController extends Controller
         );
         
         return SupportResource::collection($supports->items())
-                                ->additional();
+                                ->additional([
+                                    'meta' => [
+                                        
+                                    ]
+                                ]);
     }
 
     /**
