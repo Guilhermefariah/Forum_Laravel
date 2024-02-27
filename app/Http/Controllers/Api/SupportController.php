@@ -26,7 +26,7 @@ class SupportController extends Controller
         //$supports = Support::paginate();
         $supports = $this->service->getAll(filter: $request->filter);
         
-        return SupportResource::collection($supports);
+        return SupportResource::collection(collect($supports));
     }
 
     /**
