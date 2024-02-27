@@ -30,7 +30,8 @@ class SupportController extends Controller
             filter: $request->filter
         );
         
-        return SupportResource::collection($supports->items());
+        return SupportResource::collection($supports->items())
+                                ->additional();
     }
 
     /**
