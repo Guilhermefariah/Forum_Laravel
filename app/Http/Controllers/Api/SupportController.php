@@ -29,8 +29,8 @@ class SupportController extends Controller
             totalPerPage: $request->get('per_page', 1),
             filter: $request->filter
         );
-
-        return SupportResource::collection(collect($supports));
+        
+        return SupportResource::collection($supports->items());
     }
 
     /**
