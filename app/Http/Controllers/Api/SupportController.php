@@ -31,7 +31,7 @@ class SupportController extends Controller
             filter: $request->filter
         );
 
-       return ApiAdapter::toJson();
+       return ApiAdapter::toJson($supports);
     }
 
     /**
