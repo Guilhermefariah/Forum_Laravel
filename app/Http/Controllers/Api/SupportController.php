@@ -24,7 +24,7 @@ class SupportController extends Controller
     public function index()
     {
         //$supports = Support::paginate();
-        $supports = $this->service->getAll();
+        $supports = $this->service->getAll(filter: $request->filter);
         
         return SupportResource::collection($supports);
     }
