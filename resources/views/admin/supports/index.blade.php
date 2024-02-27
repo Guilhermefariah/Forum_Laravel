@@ -2,8 +2,6 @@
 
 @section('title', 'Fórum')
     
-@endsection
-
 @section('header')
 <h1>Listagem dos Suportes</h1>
 @endsection
