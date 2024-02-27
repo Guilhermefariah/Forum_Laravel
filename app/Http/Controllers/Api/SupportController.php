@@ -24,8 +24,12 @@ class SupportController extends Controller
     public function index(Request $request)
     {
         //$supports = Support::paginate();
-        $supports = $this->service->getAll(filter: $request->filter);
-        
+        $supports = $this->service->paginate(
+            page: $request->get('page', 1),
+            totalPerPage: $request->get('per_page', 1),
+            filter: $request->filter
+        );
+
         return SupportResource::collection(collect($supports));
     }
 
@@ -61,9 +65,8 @@ class SupportController extends Controller
         if (!$support) {
             return response()->json(['error' => 'Not Found'], Response::HTTP_NOT_FOUND);
         }
-        
-        return new SupportResource($support);
 
+        return new SupportResource($support);
     }
 
     /**
