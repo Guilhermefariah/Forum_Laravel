@@ -31,7 +31,7 @@ class StoreUpdateSupport extends FormRequest
             ],
         ];
 
-        if ($this->method() ===  'PUT'){
+        if ($this->method() ===  'PUT' || $this->method() ===  'PATH'){
             $rules['subject'] = [
                 'required',
                 'min:3',
