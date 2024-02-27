@@ -7,6 +7,7 @@ use App\DTO\Supports\UpdateSupportDTO;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUpdateSupport;
 use App\Http\Resources\SupportResource;
+use App\Models\Support;
 use App\Services\SupportService;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -22,7 +23,9 @@ class SupportController extends Controller
      */
     public function index()
     {
-        //
+        $supports = Support::paginate();
+        
+        return SupportResource::collection($supports);
     }
 
     /**
