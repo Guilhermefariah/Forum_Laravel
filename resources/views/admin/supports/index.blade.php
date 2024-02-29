@@ -3,7 +3,7 @@
 @section('title', 'Fórum')
     
 @section('header')
-@include('admin.supports.partials.header')
+@include('admin.supports.partials.header', compact('supports') )
 @endsection
 
 @section('content')

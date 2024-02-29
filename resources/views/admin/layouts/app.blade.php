@@ -20,7 +20,7 @@
             <footer>
                 $default footer
             </footer>
-    <section class="container px-4 mx-auto">
+    <section>
 </body>
 
 </html>
