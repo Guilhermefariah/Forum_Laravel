@@ -14,7 +14,7 @@
 
         @yield('header')
 
-        <div class="content">
+        <div>
             @yield('content')
         </div>
         <footer>
