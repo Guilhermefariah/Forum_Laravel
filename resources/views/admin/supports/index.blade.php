@@ -8,9 +8,6 @@
 
 @section('content')
     
-
-<a href="{{ route('supports.create') }}">Criar Dúvida</a>
-
 <table>
     <thead>
         <th>Assunto</th>
