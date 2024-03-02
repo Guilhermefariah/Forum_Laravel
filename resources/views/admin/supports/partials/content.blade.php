@@ -28,6 +28,7 @@
                     @foreach ($supports->items() as $support)
                         <tr>
                             <td class="px-4 py-2 text-sm font-medium whitespace-nowrap dark:text-white">
+                                {{ $support->subject }}
                             </td>
                             <td class="px-12 py-2 text-sm font-medium whitespace-nowrap">
                                 
