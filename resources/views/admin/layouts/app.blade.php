@@ -16,9 +16,6 @@
         <div>
             @yield('content')
         </div>
-        <footer>
-            $default footer
-        </footer>
         <section>
 </body>
 
