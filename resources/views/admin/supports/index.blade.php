@@ -7,7 +7,8 @@
 @endsection
 
 @section('content')
-    
+@include('admin.supports.partials.content')
+
 <table>
     <thead>
         <th>Assunto</th>
