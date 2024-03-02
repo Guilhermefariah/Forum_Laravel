@@ -13,7 +13,6 @@
     <section class="container px-4 mx-auto">
 
         @yield('header')
-
         <div>
             @yield('content')
         </div>
