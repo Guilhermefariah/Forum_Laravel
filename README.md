@@ -36,10 +36,10 @@ Integração de recursos do Pagination para otimizar a apresentação de grandes
 ### Como Inciar o Projeto!
 Clone Repositório
 ```sh
-git clone -b https://github.com/Guilhermefariah/Forum_Laravel laravel-10
+git clone -b https://github.com/Guilhermefariah/Forum_Laravel 
 ```
 ```sh
-cd laravel-10
+cd Forum-Laravel
 ```
 
 Crie o Arquivo .env
