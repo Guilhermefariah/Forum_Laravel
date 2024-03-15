@@ -1,3 +1,4 @@
+@extends('admin.layouts.app')
 <h1>Nova Dúvida</h1>
 
 <x-alert/>
