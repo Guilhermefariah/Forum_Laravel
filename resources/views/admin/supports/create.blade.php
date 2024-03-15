@@ -1,5 +1,9 @@
 @extends('admin.layouts.app')
+
+@section('header')
 <h1>Nova Dúvida</h1>
+@endsection
+
 
 @section('content')
 <x-alert/>
