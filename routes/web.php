@@ -1,11 +1,12 @@
 <?php
 
-use App\Enums\SupportStatus;
 use App\Http\Controllers\Admin\SupportController;
 use App\Http\Controllers\Site\SiteController;
 use Illuminate\Support\Facades\Route;
  
-// Route::resource('/supports', SupportController::class);
+Route::get('/', SupportController::class . '@index');
+
+Route::resource('/supports', SupportController::class);
 Route::delete('/supports/{id}', [SupportController::class, 'destroy'])->name('supports.destroy');
 Route::put('/supports/{id}', [SupportController::class, 'update'])->name('supports.update');
 Route::get('/supports/{id}/edit', [SupportController::class,'edit'])->name('supports.edit');
@@ -14,6 +15,4 @@ Route::get('/supports/{id}', [SupportController::class, 'show'])->name('supports
 Route::post('/supports', [SupportController::class, 'store'])->name('supports.store');
 Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
 Route::get('/contato', [SiteController::class, 'contact']);
-Route::get('/', function () {
-    return view('welcome');
-});
+
