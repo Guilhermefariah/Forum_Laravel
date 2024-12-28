@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col justify-between ">
     <section class="container px-4 mx-auto">
 
         @yield('header')
