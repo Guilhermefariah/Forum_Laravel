@@ -1,53 +1,38 @@
+# Fórum Laravel 10 
 
-# Fórum Laravel 10
+![Texto Alternativo](/img/forum.png)  ![Texto Alternativo](/img/laravel.png). 
 
-![Texto Alternativo](/img/forum.png) ![Texto Alternativo](/img/laravel.png)
+Este projeto é um fórum desenvolvido utilizando o Framework Laravel 10. Ele utiliza Docker para facilitar o ambiente de desenvolvimento.
 
-# Introdução! 
-Bem-vindo ao Fórum Laravel 10! Este projeto é baseado no Framework Laravel e utiliza Docker
-para facilitar o ambiente de desenvolvimento. 
+## Introdução
 
-# Principais Componentes
+Bem-vindo ao Fórum Laravel 10! Este projeto é uma aplicação web que permite aos usuários criar e gerenciar suportes.
 
-## 🧱 DTOs (Data Transfer Objects)
-Utilização de DTOs para estruturar e transferir dados entre camadas, promovendo uma comunicação
-clara e coesa.
+## Principais Componentes
 
-## 📈 Enums
-Implementação de Enums para representar conjuntos fixos de valores, proporcionando consistência e legibilidade ao código.
+* 🧱**DTOs (Data Transfer Objects)**: Utilização de DTOs para estruturar e transferir dados entre camadas, promovendo uma comunicação clara e coesa.
+* 📈**Enums**: Implementação de Enums para representar conjuntos fixos de valores, proporcionando consistência e legibilidade ao código.
+* 💻**Helpers**: Desenvolvimento de funções utílitarias (Helpers) para simplificar tarefas repetitivas e melhorar a modularidade do código.
+* 🎲**Models**: Criação de models para representar entidades no banco de dados, seguindo as práticas de modelagem de dados eficientes.
+* 🗃️**Repositories**: Adoção do padrão Repository para isolar a lógica de acesso a dados, facilitando a manutenção e testabilidade do código.
+* ⚙️**Services**: Implementação de Services para encapsular a lógica de negócios, promovendo uma separação clara entre as camadas da aplicação.
+* 📃**Pagination**: Integração de recursos do Pagination para otimizar a apresentação de grandes conjuntos de dados, garantindo a experiência do usuário mais fluída e eficiente.
 
-## 💻 Helpers 
-Desenvolvimento de funções utílitarias (Helpers) para simplificar tarefas repetitivas e melhorar a 
-modularidade do código.
+## Como Iniciar o Projeto
 
-## 🎲 Models
-Criação de models para representar entidades no banco de dados, seguindo as práticas de modelagem de dados eficientes.
-
-## 🗃️ Repositories
-Adoção do padrão Repository para isolar a lógica de acesso a dados, facilitando a manutenção e testabilidade do código.
-
-## ⚙️ Services
-Implementação de Services para encapsular a lógica de negócios, promovendo uma separação clara entre as camadas da aplicação.
-
-## 📃 Pagination
-Integração de recursos do Pagination para otimizar a apresentação de grandes conjuntos de dados, garantindo a experiência do usúario mais fluída e eficiente.
-
-
-### Como Inciar o Projeto!
-Clone Repositório
+1. Clone o repositório:
 ```sh
 git clone -b https://github.com/Guilhermefariah/Forum_Laravel laravel-10
 ```
+2. Acesse o diretório do projeto:
 ```sh
 cd laravel-10
 ```
-
-Crie o Arquivo .env
+3. Crie o arquivo `.env`:
 ```sh
 cp .env.example .env
 ```
-
-Atualize as variáveis de ambiente do arquivo .env
+4. Atualize as variáveis de ambiente do arquivo `.env`:
 ```dosini
 APP_NAME="Fórum Laravel 10"
 APP_URL=http://localhost:8989
@@ -67,40 +52,40 @@ REDIS_HOST=redis
 REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
-
-Suba os containers do projeto
+5. Suba os containers do projeto:
 ```sh
 docker-compose up -d
 ```
-
-Acesse o container app
+6. Acesse o container app:
 ```sh
 docker-compose exec app bash
 ```
-
-Instale as dependências do projeto
+7. Instale as dependências do projeto:
 ```sh
 composer install
 ```
-
-Gere a key do projeto Laravel
+8. Gere a key do projeto Laravel:
 ```sh
 php artisan key:generate
 ```
-Executando as migrações de banco de dados. 
-``` sh
-    php artisan migrate
+9. Execute as migrações de banco de dados:
+```sh
+php artisan migrate
 ```
 
-Acesse o projeto
-[http://localhost:8989](http://localhost:8989)
+## Rotas
 
+* `/`: Rota principal do fórum.
+* `/supports`: Rota para criar e gerenciar suportes.
+* `/supports/{id}`: Rota para visualizar um suporte específico.
+* `/supports/{id}/edit`: Rota para editar um suporte específico.
+* `/supports/create`: Rota para criar um novo suporte.
+* `/supports/{id}/destroy`: Rota para deletar um suporte específico.
 
-Contribuição
+## Contribuição
 
-Sinta-se à vontade para contribuir contribuir com o desenvolvimento do Fórum Laravel 10. 
-problemas (issues) ou envie solicitações de pull (pull requests) para melhorar o projeto.
+Este projeto é open-source e qualquer contribuição é bem-vinda. Se você encontrar algum erro ou tiver alguma sugestão, por favor, abra uma issue ou faça um pull request.
 
-Licença
+## Licença
 
-Este projeto é licenciado sobre a licença <strong>MIT</strong>.
+Este projeto é licenciado sob a licença MIT.
