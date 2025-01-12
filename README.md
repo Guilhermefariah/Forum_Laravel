@@ -1,12 +1,12 @@
-# Fórum Laravel 10 
+# Fórum Laravel
 
 ![Texto Alternativo](/img/forum.png)  ![Texto Alternativo](/img/laravel.png). 
 
-Este projeto é um fórum desenvolvido utilizando o Framework Laravel 10. Ele utiliza Docker para facilitar o ambiente de desenvolvimento.
+Este projeto é um fórum desenvolvido utilizando o Framework Laravel. Ele utiliza Docker para facilitar o ambiente de desenvolvimento.
 
 ## Introdução
 
-Bem-vindo ao Fórum Laravel 10! Este projeto é uma aplicação web que permite aos usuários criar e gerenciar suportes.
+Bem-vindo ao Fórum Laravel! Este projeto é uma aplicação web que permite aos usuários criar e gerenciar suportes.
 
 ## Principais Componentes
 
